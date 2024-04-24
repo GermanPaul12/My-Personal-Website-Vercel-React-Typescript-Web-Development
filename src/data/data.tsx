@@ -13,7 +13,8 @@ import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
+import LeetocodeIcon from '../components/Icon/LeetcodeIcon';
+import heroImage from '../images/schloss.jpg';
 import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
 import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
 import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
@@ -45,7 +46,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  description: "Personal Website of German Paul",
 };
 
 /**
@@ -78,7 +79,7 @@ export const heroData: Hero = {
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can catch me playing racket sports like <strong className="text-stone-100">Padel, Table Tennis and Pickleball</strong>,
-        or <strong className="text-stone-100">travelling, playing chess and coding</strong>.{' '}
+        <strong className="text-stone-100"> travelling, playing chess or coding</strong>.{' '}
       </p>
     </>
   ),
@@ -102,16 +103,14 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `Absolutely passionate about Data Science and Python 3 programming. Over 3 years of experience in programming. Planning to do my masters in Data Science after my bachelor.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Mannheim, Germany', Icon: MapIcon},
+    {label: 'Age', text: '23', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'German', Icon: FlagIcon},
+    {label: 'Interests', text: 'Racket Sports, Travelling, Reading and Chess', Icon: SparklesIcon},
+    {label: 'Study', text: 'Duale Hochschule Baden-Württemberg', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Stadt Mannheim', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -124,66 +123,66 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
-  {
-    name: 'Frontend development',
-    skills: [
-      {
-        name: 'React',
         level: 9,
       },
       {
-        name: 'Typescript',
-        level: 7,
+        name: 'German',
+        level: 10,
       },
       {
-        name: 'GraphQL',
+        name: 'Russian',
         level: 6,
       },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Data Anaylsis',
     skills: [
       {
-        name: 'Node.js',
+        name: 'EDA',
+        level: 9,
+      },
+      {
+        name: 'Data Visualization',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
+        name: 'SQL',
+        level: 8,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Programming languages',
     skills: [
       {
-        name: 'React Native',
+        name: 'Python',
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Node.js',
+        level: 6,
       },
       {
         name: 'Swift',
-        level: 3,
+        level: 5,
+      },
+    ],
+  },
+  {
+    name: 'Data Science',
+    skills: [
+      {
+        name: 'Machine Learning',
+        level: 7,
+      },
+      {
+        name: 'Soft Skills',
+        level: 8,
+      },
+      {
+        name: 'Math',
+        level: 6,
       },
     ],
   },
@@ -338,13 +337,13 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'german.paul@icloud.com',
+      href: 'mailto:german.paul@icloud.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Mannheim Germany',
+      href: 'https://www.google.ca/maps/place/Mannheim',
     },
     {
       type: ContactType.Instagram,
@@ -363,9 +362,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/GermanPaul12'},
   {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
+  {label: 'Leetcode', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
   {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
 ];
