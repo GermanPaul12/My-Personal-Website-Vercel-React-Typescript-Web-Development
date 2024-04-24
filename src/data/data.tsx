@@ -9,19 +9,20 @@ import {
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
+import CodingGameIcon from '../components/Icon/CodingGameIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
 import TwitterIcon from '../components/Icon/TwitterIcon';
-import LeetocodeIcon from '../components/Icon/LeetcodeIcon';
+import LeetcodeIcon from '../components/Icon/LeetcodeIcon';
 import heroImage from '../images/schloss.jpg';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
+import porfolioImage1 from '../images/portfolio/python-course-1.jpg';
+import porfolioImage2 from '../images/portfolio/stock-2.jpg';
+import porfolioImage3 from "../images/portfolio/book-3.jpg";
+import porfolioImage4 from '../images/portfolio/datacamp-4.png';
+import porfolioImage5 from '../images/portfolio/pi-5.jpg';
+import porfolioImage6 from '../images/portfolio/money-6.jpg';
+import porfolioImage7 from '../images/portfolio/datawhispers-7.png';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
@@ -45,7 +46,7 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
+  title: "German Paul's Website",
   description: "Personal Website of German Paul",
 };
 
@@ -85,7 +86,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '../assets/resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -136,7 +137,7 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Data Anaylsis',
+    name: 'Data Analysis',
     skills: [
       {
         name: 'EDA',
@@ -193,47 +194,48 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'STADS Python Course',
+    description: 'Web App for the 8-week python course where i was the lecturer.',
+    url: 'https://python-kurs.streamlit.app/',
     image: porfolioImage1,
   },
   {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage2,
-  },
-  {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Web App for the books that I read',
+    description: 'All the books that I recently read in a firebase database in a streamlit UI and an admin panel where i can add, update and delete books.',
+    url: 'https://my-books.streamlit.app/',
     image: porfolioImage3,
   },
   {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Stock Price Prediction',
+    description: 'DHBW Uni Project to predict the dow jones through web scraping the indian times and using ML.',
+    url: 'https://github.com/GermanPaul12/DataWhispers-Stock-Price-Prediction-Projekt-DHBW',
+    image: porfolioImage2,
+  },
+  {
+    title: 'Professional Data Scientist DataCamp Certification',
+    description: 'My slides and code for the final presentation of the Pro Data Science Track at DataCamp. I did EDA and examined 5 models.',
+    url: 'https://github.com/GermanPaul12/Predicting-High-Traffic-Recipes-DataCamp',
     image: porfolioImage4,
   },
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Raspberry Automation Project',
+    description: 'Get notified via mail if it will rain and get the latest and most popular hacker news in the morning.',
+    url: 'https://github.com/GermanPaul12/Automating-Hacker-News-and-Weather-Mails',
     image: porfolioImage5,
   },
   {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Monthly Expense Planner',
+    description: 'I had a long background in the finance world so I designed this little web app to have an overview of my finances',
+    url: 'https://finance-planner.streamlit.app/',
     image: porfolioImage6,
   },
   {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'DataWhispers own python module',
+    description: 'We had to write an open-book exam so we designed this web-app to help our fellow students to solve some of the tasks which were likely to occur in the exam.',
+    url: 'https://datawhispers.streamlit.app/',
     image: porfolioImage7,
   },
+  /* 
   {
     title: 'Project title 8',
     description: 'Give a short description of your project here.',
@@ -258,6 +260,7 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://reactresume.com',
     image: porfolioImage11,
   },
+  */
 ];
 
 /**
@@ -265,39 +268,87 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'October 2022 - present',
+    location: 'Duale Hochschule Baden-Württemberg Mannheim',
+    title: 'Bachelors in Business Informatics Data Science',
+    content: <p>Mix of Business and Informatics with a major focus on Data Science.</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'September 2020 - August 2022',
+    location: 'Willy Helpach Business School',
+    title: 'Apprenticeship as financial assistant',
+    content: <p>Learning about financial markets, loans, economics and a variety of business related stuff.</p>,
+  },
+  {
+    date: 'September 2017 - July 2022',
+    location: 'Johann Philipp Bronner School',
+    title: 'Economical high school',
+    content: <p>Highest school degree in Germany with a focus on economics.</p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'September 2022 - Present',
+    location: 'Stadt Mannehim',
+    title: 'Internship as Data Scientist and Python Developer',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Examining the practical use cases of Machine Learning for the city of Mannheim.
+        Developing automation tools in Python.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'September 2020 - August 2022',
+    location: 'Sparkasse Heidelberg',
+    title: 'Apprenticeship as financial assistant',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Being part of the startup center team which is responsible for giving loans to startups.
+      </p>
+    ),
+  },
+];
+
+export const volunteering: TimelineItem[] = [
+  {
+    date: 'October 2023 - Present',
+    location: 'Google Developer Student Club Mannheim',
+    title: 'Technical Lead',
+    content: (
+      <p>
+        Tutoring in Python and organizing Hackathons
+      </p>
+    ),
+  },
+  {
+    date: 'July 2023 - May 2024',
+    location: "Student's Association for Data Analytics and Statistics",
+    title: 'Project Lead Datathon',
+    content: (
+      <p>
+        Being one of the main organizers for a programming competition in the field of data science. Event hosted around 100 students and I managed a team of 15 people.
+      </p>
+    ),
+  },
+  {
+    date: 'September 2023 - February 2024',
+    location: "University of Mannheim",
+    title: 'Python Tutor',
+    content: (
+      <p>
+        Was the lecturer for a 8-week Python Course for around 140 students. Major focus on Data Analytics.
+      </p>
+    ),
+  },
+  {
+    date: 'October 2022 - October 2023',
+    location: "AStA DHBW",
+    title: 'Deputy Chairperson',
+    content: (
+      <p>
+        Overseeing operations across 9 branches, collectively impacting 32,000 students to pave the way for a brighter future for the fellow students.
       </p>
     ),
   },
@@ -310,18 +361,18 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
+      name: 'Data Science Master Student at Uni Mannheim',
+      text: 'Thanks for the python refresher it greatly helped to widen my understanding.',
+      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/10.jpg',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
-      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
+      name: 'Hackathon Organizer',
+      text: 'The team of German provided an interesting solution which was great for the finals and they did great at presenting in front of 3,000 people.',
+      image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1008.jpg',
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
+      name: 'Teamlead at City Mannheim',
+      text: "German's work paves the way for a more digitalized and modern city.",
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
   ],
@@ -346,14 +397,14 @@ export const contact: ContactSection = {
       href: 'https://www.google.ca/maps/place/Mannheim',
     },
     {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      type: ContactType.LinkedIn,
+      text: '@germanpaul12',
+      href: 'https://www.linkedin.com/in/germanpaul12/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'GermanPaul12',
+      href: 'https://github.com/GermanPaul12',
     },
   ],
 };
@@ -363,8 +414,8 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/GermanPaul12'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Leetcode', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/18163498/german1212'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/germanpaul12/'},
+  {label: 'Leetcode', Icon: LeetcodeIcon, href: 'https://leetcode.com/GermanPaul12/'},
+  {label: 'CodingGame', Icon: CodingGameIcon, href: 'https://www.codingame.com/profile/e545bdaa0b8057537f519b56b55a0b2f6365715'},
 ];
