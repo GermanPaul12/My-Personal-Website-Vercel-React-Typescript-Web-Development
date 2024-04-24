@@ -8,26 +8,24 @@ import {
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
-import GithubIcon from '../components/Icon/GithubIcon';
 import CodingGameIcon from '../components/Icon/CodingGameIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
+import GithubIcon from '../components/Icon/GithubIcon';
+import LeetcodeIcon from '../components/Icon/LeetcodeIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
-import LeetcodeIcon from '../components/Icon/LeetcodeIcon';
-import heroImage from '../images/schloss.jpg';
-import porfolioImage1 from '../images/portfolio/python-course-1.jpg';
-import porfolioImage2 from '../images/portfolio/stock-2.jpg';
-import porfolioImage3 from "../images/portfolio/book-3.jpg";
-import porfolioImage4 from '../images/portfolio/datacamp-4.png';
-import porfolioImage5 from '../images/portfolio/pi-5.jpg';
-import porfolioImage6 from '../images/portfolio/money-6.jpg';
-import porfolioImage7 from '../images/portfolio/datawhispers-7.png';
-import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
+/*import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/german_vacay.jpeg';
+import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';*/
+import profilepic from '../images/german_vacay.jpg';
+import porfolioImage3 from "../images/portfolio/book-3.jpg";
+import porfolioImage4 from '../images/portfolio/datacamp-4.png';
+import porfolioImage7 from '../images/portfolio/datawhispers-7.png';
+import porfolioImage6 from '../images/portfolio/money-6.jpg';
+import porfolioImage5 from '../images/portfolio/pi-5.jpg';
+import porfolioImage1 from '../images/portfolio/python-course-1.jpg';
+import porfolioImage2 from '../images/portfolio/stock-2.jpg';
+import heroImage from '../images/schloss.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
