@@ -25,7 +25,7 @@ import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
 import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
-import profilepic from '../images/profilepic.jpg';
+import profilepic from '../images/german_vacay.jpeg';
 import testimonialImage from '../images/testimonial.webp';
 import {
   About,
@@ -69,18 +69,16 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm German Paul.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a dual-student in <strong className="text-stone-100">Business Informatics Data Science</strong>, at <strong className="text-stone-100">Duale Hochschule Baden-Württemberg and Stadt Mannheim</strong>. 
+        I also engage in student innitiatives like <strong className="text-stone-100">Google Student Developer Club Mannheim and Student's Association for Data Analytics and Statistics</strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time time, you can catch me playing racket sports like <strong className="text-stone-100">Padel, Table Tennis and Pickleball</strong>,
+        or <strong className="text-stone-100">travelling, playing chess and coding</strong>.{' '}
       </p>
     </>
   ),
