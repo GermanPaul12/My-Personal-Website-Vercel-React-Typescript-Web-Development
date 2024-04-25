@@ -84,7 +84,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '../assets/resume.pdf',
+      href: 'https://github.com/GermanPaul12/My-Personal-Website-Vercel-React-Typescript-Web-Development/blob/main/src/assets/resume.pdf?raw=true',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
