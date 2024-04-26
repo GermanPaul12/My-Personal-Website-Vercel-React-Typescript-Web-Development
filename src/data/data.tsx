@@ -236,7 +236,7 @@ export const portfolioItems: PortfolioItem[] = [
   
   {
     title: 'Chess.com Games Analysis',
-    description: 'All my chess.com games analyzed in real time. You can also analyze your games by providing an username. Result is hosted on streamlit.',
+    description: 'All my chess.com games analyzed in real time (once a day github actions updates the data). You can also analyze your games by providing an username. Result is hosted on streamlit.',
     url: 'https://chesscom.streamlit.app/Analysis',
     image: porfolioImage8,
   },
