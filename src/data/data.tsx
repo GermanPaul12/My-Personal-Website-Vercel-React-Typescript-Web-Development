@@ -130,7 +130,7 @@ export const skills: SkillGroup[] = [
       },
       {
         name: 'Russian',
-        level: 6,
+        level: 8,
       },
     ],
   },
@@ -173,15 +173,15 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'Machine Learning',
-        level: 7,
-      },
-      {
-        name: 'Soft Skills',
         level: 8,
       },
       {
+        name: 'Soft Skills',
+        level: 9,
+      },
+      {
         name: 'Math',
-        level: 6,
+        level: 8,
       },
     ],
   },
