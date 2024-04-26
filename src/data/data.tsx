@@ -13,8 +13,8 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import LeetcodeIcon from '../components/Icon/LeetcodeIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-/*import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
+import porfolioImage8 from '../images/portfolio/chess-8.jpg';
+/*import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
 import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';*/
 import profilepic from '../images/german_vacay.jpg';
@@ -233,13 +233,14 @@ export const portfolioItems: PortfolioItem[] = [
     url: 'https://datawhispers.streamlit.app/',
     image: porfolioImage7,
   },
-  /* 
+  
   {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Chess.com Games Analysis',
+    description: 'All my chess.com games analyzed in real time. You can also analyze your games by providing an username. Result is hosted on streamlit.',
+    url: 'https://chesscom.streamlit.app/Analysis',
     image: porfolioImage8,
   },
+  /* 
   {
     title: 'Project title 9',
     description: 'Give a short description of your project here.',
